@@ -4,6 +4,10 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+
+    outDir: 'test'
+    },
   plugins: [vue()],
   //解决“vite use `--host` to expose”
   base: './',	//不加打包后白屏
